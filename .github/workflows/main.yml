@@ -25,8 +25,16 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@master
       - name: Generate Zip
-        uses : byteever/action-build-zip@master
+      - name: Archive Release
+        uses: thedoctor0/zip-release@master
         with:
-          filename: 'pilaroid_usb.zip'
+          type: 'zip'
+          filename: 'pilaroid_usb_last.zip'
+          exclusions: '*.git* /*node_modules/* .editorconfig'
+      - name: Upload Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "pilaroid_usb_last.zip"
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       
