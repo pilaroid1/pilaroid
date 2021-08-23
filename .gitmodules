@@ -4,9 +4,6 @@
 [submodule "apps/pocca"]
 	path = apps/pocca
 	url = https://github.com/usini/pocca
-[submodule "apps/selfie"]
-	path = apps/selfie
-	url = https://github.com/usini/pocca-selfie
 [submodule "apps/gif"]
 	path = apps/gif
 	url = https://github.com/usini/pocca-gif
