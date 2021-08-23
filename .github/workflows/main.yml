@@ -24,6 +24,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@master
+      - name: Get Github commit ref
+        id: vars
+        shell: bash
+        run: |
+          echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
       - name: Archive Release
         uses: thedoctor0/zip-release@master
         with:
@@ -34,6 +39,7 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           artifacts: "pilaroid_usb_last.zip"
+          tag: ${{ steps.vars.outputs.sha_short }}
           token: ${{ secrets.GITHUB_TOKEN }}
-
+    
       
