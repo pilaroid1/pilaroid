@@ -13,6 +13,11 @@
 [submodule "apps/pano"]
 	path = apps/pano
 	url = https://github.com/usini/pocca-pano
-[submodule "apps/pocca-pose-estimation"]
-	path = apps/pose-estimation
-	url = https://github.com/usini/pocca-pose-estimation
+[submodule "apps/selfie"]
+	path = apps/selfie
+	url = https://github.com/usini/pocca-selfie
+[submodule "selfie"]
+	branch = main
+[submodule "apps/wsdd"]
+	path = apps/wsdd
+	url = https://github.com/usini/pocca-wsdd
