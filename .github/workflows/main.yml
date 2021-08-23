@@ -24,7 +24,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@master
-      - name: Generate Zip
       - name: Archive Release
         uses: thedoctor0/zip-release@master
         with:
