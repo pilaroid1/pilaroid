@@ -5,6 +5,9 @@ It is based on Interaction Research Studios project Probetools : https://probeto
 
 ![Pilaroid photo](doc/pilaroid.png)
 
+# [Build Instructions](https://github.com/usini/pilaroids_3Dmodels)
+
+
 # Downloads
  * 📁 SD card: [Google Drive: pilaroid_23_08_2021.zip](https://drive.google.com/file/d/1ZX-iX2K74WXLs8QSD8VOEyrMSkti2_95/)
  * 📁 USB Drive : [Github : pilaroid_usb_last.zip](https://github.com/usini/pilaroid/releases/latest)
